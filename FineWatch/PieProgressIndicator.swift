@@ -50,7 +50,7 @@ class PieProgressIndicator: NSView {
 		let center = NSPoint(x: self.bounds.width / 2.0, y: self.bounds.height / 2.0)
 		let radius = (CGFloat)((self.bounds.width > self.bounds.height ? self.bounds.height : self.bounds.width) / 2.0)
 	
-		NSColor.lightGrayColor().set()
+		self.backgroundColor.set()
 		var overallPath = NSBezierPath()
 		overallPath.moveToPoint(center)
 		overallPath.appendBezierPathWithArcWithCenter(center, radius: radius, startAngle: 0.0, endAngle: 360.0)
@@ -63,7 +63,7 @@ class PieProgressIndicator: NSView {
 		let startAngle: CGFloat = (CGFloat)(90.0 - 360.0 * ratio)
 		let endAngle: CGFloat = 90.0
 
-		NSColor.darkGrayColor().set()
+		self.foregroundColor.set()
 		var piePath = NSBezierPath()
 		piePath.moveToPoint(center)
 		piePath.appendBezierPathWithArcWithCenter(center, radius: radius, startAngle: startAngle, endAngle: endAngle)
