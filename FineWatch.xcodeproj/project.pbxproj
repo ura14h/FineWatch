@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311645D61A86EFCD00D4C608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311645D51A86EFCD00D4C608 /* AppDelegate.swift */; };
+		311645D81A86EFCD00D4C608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311645D71A86EFCD00D4C608 /* ViewController.swift */; };
+		311645DA1A86EFCD00D4C608 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311645D91A86EFCD00D4C608 /* Images.xcassets */; };
+		311645DD1A86EFCD00D4C608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311645DB1A86EFCD00D4C608 /* Main.storyboard */; };
+		311645E91A86EFCD00D4C608 /* FineWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311645E81A86EFCD00D4C608 /* FineWatchTests.swift */; };
+		31FA0DDE1AA1593200F1AF97 /* PieProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0DDD1AA1593200F1AF97 /* PieProgressIndicator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		311645E31A86EFCD00D4C608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311645C81A86EFCD00D4C608 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311645CF1A86EFCD00D4C608;
+			remoteInfo = FineWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		311645D01A86EFCD00D4C608 /* FineWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FineWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		311645D41A86EFCD00D4C608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311645D51A86EFCD00D4C608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		311645D71A86EFCD00D4C608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		311645D91A86EFCD00D4C608 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		311645DC1A86EFCD00D4C608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		311645E21A86EFCD00D4C608 /* FineWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FineWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311645E71A86EFCD00D4C608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311645E81A86EFCD00D4C608 /* FineWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FineWatchTests.swift; sourceTree = "<group>"; };
+		31FA0DDD1AA1593200F1AF97 /* PieProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieProgressIndicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311645CD1A86EFCD00D4C608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311645DF1A86EFCD00D4C608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311645C71A86EFCD00D4C608 = {
+			isa = PBXGroup;
+			children = (
+				311645D21A86EFCD00D4C608 /* FineWatch */,
+				311645E51A86EFCD00D4C608 /* FineWatchTests */,
+				311645D11A86EFCD00D4C608 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311645D11A86EFCD00D4C608 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311645D01A86EFCD00D4C608 /* FineWatch.app */,
+				311645E21A86EFCD00D4C608 /* FineWatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311645D21A86EFCD00D4C608 /* FineWatch */ = {
+			isa = PBXGroup;
+			children = (
+				311645D51A86EFCD00D4C608 /* AppDelegate.swift */,
+				311645D71A86EFCD00D4C608 /* ViewController.swift */,
+				31FA0DDD1AA1593200F1AF97 /* PieProgressIndicator.swift */,
+				311645D91A86EFCD00D4C608 /* Images.xcassets */,
+				311645DB1A86EFCD00D4C608 /* Main.storyboard */,
+				311645D31A86EFCD00D4C608 /* Supporting Files */,
+			);
+			path = FineWatch;
+			sourceTree = "<group>";
+		};
+		311645D31A86EFCD00D4C608 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				311645D41A86EFCD00D4C608 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		311645E51A86EFCD00D4C608 /* FineWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				311645E81A86EFCD00D4C608 /* FineWatchTests.swift */,
+				311645E61A86EFCD00D4C608 /* Supporting Files */,
+			);
+			path = FineWatchTests;
+			sourceTree = "<group>";
+		};
+		311645E61A86EFCD00D4C608 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				311645E71A86EFCD00D4C608 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311645CF1A86EFCD00D4C608 /* FineWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311645EC1A86EFCD00D4C608 /* Build configuration list for PBXNativeTarget "FineWatch" */;
+			buildPhases = (
+				311645CC1A86EFCD00D4C608 /* Sources */,
+				311645CD1A86EFCD00D4C608 /* Frameworks */,
+				311645CE1A86EFCD00D4C608 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FineWatch;
+			productName = FineWatch;
+			productReference = 311645D01A86EFCD00D4C608 /* FineWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		311645E11A86EFCD00D4C608 /* FineWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311645EF1A86EFCD00D4C608 /* Build configuration list for PBXNativeTarget "FineWatchTests" */;
+			buildPhases = (
+				311645DE1A86EFCD00D4C608 /* Sources */,
+				311645DF1A86EFCD00D4C608 /* Frameworks */,
+				311645E01A86EFCD00D4C608 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311645E41A86EFCD00D4C608 /* PBXTargetDependency */,
+			);
+			name = FineWatchTests;
+			productName = FineWatchTests;
+			productReference = 311645E21A86EFCD00D4C608 /* FineWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311645C81A86EFCD00D4C608 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Hiroki Ishiura";
+				TargetAttributes = {
+					311645CF1A86EFCD00D4C608 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					311645E11A86EFCD00D4C608 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 311645CF1A86EFCD00D4C608;
+					};
+				};
+			};
+			buildConfigurationList = 311645CB1A86EFCD00D4C608 /* Build configuration list for PBXProject "FineWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 311645C71A86EFCD00D4C608;
+			productRefGroup = 311645D11A86EFCD00D4C608 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311645CF1A86EFCD00D4C608 /* FineWatch */,
+				311645E11A86EFCD00D4C608 /* FineWatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311645CE1A86EFCD00D4C608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311645DA1A86EFCD00D4C608 /* Images.xcassets in Resources */,
+				311645DD1A86EFCD00D4C608 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311645E01A86EFCD00D4C608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311645CC1A86EFCD00D4C608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31FA0DDE1AA1593200F1AF97 /* PieProgressIndicator.swift in Sources */,
+				311645D81A86EFCD00D4C608 /* ViewController.swift in Sources */,
+				311645D61A86EFCD00D4C608 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311645DE1A86EFCD00D4C608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311645E91A86EFCD00D4C608 /* FineWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		311645E41A86EFCD00D4C608 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311645CF1A86EFCD00D4C608 /* FineWatch */;
+			targetProxy = 311645E31A86EFCD00D4C608 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		311645DB1A86EFCD00D4C608 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311645DC1A86EFCD00D4C608 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		311645EA1A86EFCD00D4C608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		311645EB1A86EFCD00D4C608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		311645ED1A86EFCD00D4C608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FineWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		311645EE1A86EFCD00D4C608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FineWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		311645F01A86EFCD00D4C608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FineWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FineWatch.app/Contents/MacOS/FineWatch";
+			};
+			name = Debug;
+		};
+		311645F11A86EFCD00D4C608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FineWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FineWatch.app/Contents/MacOS/FineWatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311645CB1A86EFCD00D4C608 /* Build configuration list for PBXProject "FineWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311645EA1A86EFCD00D4C608 /* Debug */,
+				311645EB1A86EFCD00D4C608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311645EC1A86EFCD00D4C608 /* Build configuration list for PBXNativeTarget "FineWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311645ED1A86EFCD00D4C608 /* Debug */,
+				311645EE1A86EFCD00D4C608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311645EF1A86EFCD00D4C608 /* Build configuration list for PBXNativeTarget "FineWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311645F01A86EFCD00D4C608 /* Debug */,
+				311645F11A86EFCD00D4C608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311645C81A86EFCD00D4C608 /* Project object */;
+}
