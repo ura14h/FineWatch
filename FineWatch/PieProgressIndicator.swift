@@ -45,13 +45,12 @@ class PieProgressIndicator: NSView {
 
 	override func drawRect(dirtyRect: NSRect) {
 		super.drawRect(dirtyRect)
-		let context = NSGraphicsContext.currentContext()?.CGContext
 
 		let center = NSPoint(x: self.bounds.width / 2.0, y: self.bounds.height / 2.0)
 		let radius = (CGFloat)((self.bounds.width > self.bounds.height ? self.bounds.height : self.bounds.width) / 2.0)
 	
 		self.backgroundColor.set()
-		var overallPath = NSBezierPath()
+		let overallPath = NSBezierPath()
 		overallPath.moveToPoint(center)
 		overallPath.appendBezierPathWithArcWithCenter(center, radius: radius, startAngle: 0.0, endAngle: 360.0)
 		overallPath.fill()
@@ -64,7 +63,7 @@ class PieProgressIndicator: NSView {
 		let endAngle: CGFloat = 90.0
 
 		self.foregroundColor.set()
-		var piePath = NSBezierPath()
+		let piePath = NSBezierPath()
 		piePath.moveToPoint(center)
 		piePath.appendBezierPathWithArcWithCenter(center, radius: radius, startAngle: startAngle, endAngle: endAngle)
 		piePath.fill()

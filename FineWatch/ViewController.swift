@@ -45,7 +45,7 @@ class ViewController: NSViewController {
 	func updateTimeLabel() {
 		let now = NSDate();
 		if let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian) {
-			let units = NSCalendarUnit.CalendarUnitHour | NSCalendarUnit.CalendarUnitMinute | NSCalendarUnit.CalendarUnitSecond | NSCalendarUnit.CalendarUnitNanosecond
+			let units: NSCalendarUnit = [NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Nanosecond]
 			let componets = calendar.components(units, fromDate: now)
 			let millisecond = componets.nanosecond / 1000000;
 			let text = String(format: "%02d:%02d:%02d.%03d", componets.hour, componets.minute, componets.second, millisecond)
