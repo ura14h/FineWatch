@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -674,40 +674,45 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O04-rA-fcO">
-                                <rect key="frame" x="86" y="145" width="309" height="57"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00:00:00.0000" id="gvv-ts-SeJ">
-                                    <font key="font" metaFont="system" size="48"/>
+                                <rect key="frame" x="87" y="147" width="307" height="54"/>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00:00:00.000" id="gvv-ts-SeJ">
+                                    <font key="font" size="42" name="Monaco"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="M1u-UR-aDn" customClass="PieProgressIndicator" customModule="FineWatch" customModuleProvider="target">
-                                <rect key="frame" x="108" y="77" width="60" height="60"/>
+                                <rect key="frame" x="108" y="79" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="49l-Jm-Yox"/>
                                     <constraint firstAttribute="height" constant="60" id="xYH-fB-VDr"/>
                                 </constraints>
+                                <animations/>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="BoR-22-R1R" customClass="PieProgressIndicator" customModule="FineWatch" customModuleProvider="target">
-                                <rect key="frame" x="176" y="77" width="60" height="60"/>
+                                <rect key="frame" x="176" y="79" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="A1w-5W-twR"/>
                                     <constraint firstAttribute="width" constant="60" id="rsj-hM-EFQ"/>
                                 </constraints>
+                                <animations/>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="bRn-xl-HHs" customClass="PieProgressIndicator" customModule="FineWatch" customModuleProvider="target">
-                                <rect key="frame" x="244" y="77" width="60" height="60"/>
+                                <rect key="frame" x="244" y="79" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ZPa-y4-DOm"/>
                                     <constraint firstAttribute="width" constant="60" id="iSP-p4-4bI"/>
                                 </constraints>
+                                <animations/>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Dsq-Ix-kMo" customClass="PieProgressIndicator" customModule="FineWatch" customModuleProvider="target">
-                                <rect key="frame" x="312" y="77" width="60" height="60"/>
+                                <rect key="frame" x="312" y="79" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="WFd-L4-7lz"/>
                                     <constraint firstAttribute="height" constant="60" id="aBp-3Z-lAh"/>
                                 </constraints>
+                                <animations/>
                             </customView>
                         </subviews>
                         <constraints>
@@ -722,6 +727,7 @@
                             <constraint firstAttribute="centerX" secondItem="Dsq-Ix-kMo" secondAttribute="centerX" constant="-102" id="t3c-aB-iak"/>
                             <constraint firstAttribute="centerX" secondItem="O04-rA-fcO" secondAttribute="centerX" id="xYr-5k-vwK"/>
                         </constraints>
+                        <animations/>
                     </view>
                     <connections>
                         <outlet property="hourPie" destination="M1u-UR-aDn" id="Kdo-ab-Yvy"/>
