@@ -33,7 +33,7 @@ class ViewController: NSViewController {
 		self.millisecondPie.currentValue = 0
 		
 		let millisecond: Double = 1 / 1000
-		let timer = NSTimer(timeInterval: millisecond, target: self, selector: "updateTimeLabel", userInfo: nil, repeats: true)
+		let timer = NSTimer(timeInterval: millisecond, target: self, selector: #selector(ViewController.updateTimeLabel), userInfo: nil, repeats: true)
 		NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
 	}
 
