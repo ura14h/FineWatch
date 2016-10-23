@@ -2,6 +2,8 @@
 
 FineWatch for macOS
 
+![Screenshot](Screenshot.png)
+
 The following is included in this project.
 
 - The application works on macOS 10.12
