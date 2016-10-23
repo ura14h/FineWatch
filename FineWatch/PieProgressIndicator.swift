@@ -11,31 +11,31 @@ import Cocoa
 @IBDesignable
 class PieProgressIndicator: NSView {
 
-	@IBInspectable var foregroundColor : NSColor = NSColor.darkGrayColor() {
+	@IBInspectable var foregroundColor : NSColor = NSColor.darkGray {
 		didSet {
-			self.setNeedsDisplayInRect(self.bounds)
+			self.setNeedsDisplay(self.bounds)
 		}
 	}
 
-	@IBInspectable var backgroundColor : NSColor = NSColor.lightGrayColor() {
+	@IBInspectable var backgroundColor : NSColor = NSColor.lightGray {
 		didSet {
-			self.setNeedsDisplayInRect(self.bounds)
+			self.setNeedsDisplay(self.bounds)
 		}
 	}
 	
 	@IBInspectable var minimumValue: Float = 0.0 {
 		didSet {
-			self.setNeedsDisplayInRect(self.bounds)
+			self.setNeedsDisplay(self.bounds)
 		}
 	}
 	@IBInspectable var maximumValue: Float = 1.0 {
 		didSet {
-			self.setNeedsDisplayInRect(self.bounds)
+			self.setNeedsDisplay(self.bounds)
 		}
 	}
 	@IBInspectable var currentValue: Float = 1.0 / 3.0 {
 		didSet {
-			self.setNeedsDisplayInRect(self.bounds)
+			self.setNeedsDisplay(self.bounds)
 		}
 	}
 	
@@ -43,16 +43,16 @@ class PieProgressIndicator: NSView {
 		super.init(coder: coder)
 	}
 
-	override func drawRect(dirtyRect: NSRect) {
-		super.drawRect(dirtyRect)
+	override func draw(_ dirtyRect: NSRect) {
+		super.draw(dirtyRect)
 
 		let center = NSPoint(x: self.bounds.width / 2.0, y: self.bounds.height / 2.0)
 		let radius = (CGFloat)((self.bounds.width > self.bounds.height ? self.bounds.height : self.bounds.width) / 2.0)
 	
 		self.backgroundColor.set()
 		let overallPath = NSBezierPath()
-		overallPath.moveToPoint(center)
-		overallPath.appendBezierPathWithArcWithCenter(center, radius: radius, startAngle: 0.0, endAngle: 360.0)
+		overallPath.move(to: center)
+		overallPath.appendArc(withCenter: center, radius: radius, startAngle: 0.0, endAngle: 360.0)
 		overallPath.fill()
 		
 		var ratio: Float = 0.0
@@ -64,8 +64,8 @@ class PieProgressIndicator: NSView {
 
 		self.foregroundColor.set()
 		let piePath = NSBezierPath()
-		piePath.moveToPoint(center)
-		piePath.appendBezierPathWithArcWithCenter(center, radius: radius, startAngle: startAngle, endAngle: endAngle)
+		piePath.move(to: center)
+		piePath.appendArc(withCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle)
 		piePath.fill()
 	}
 }

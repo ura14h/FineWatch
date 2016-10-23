@@ -33,28 +33,29 @@ class ViewController: NSViewController {
 		self.millisecondPie.currentValue = 0
 		
 		let millisecond: Double = 1 / 1000
-		let timer = NSTimer(timeInterval: millisecond, target: self, selector: #selector(ViewController.updateTimeLabel), userInfo: nil, repeats: true)
-		NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+		let timer = Timer(timeInterval: millisecond, target: self, selector: #selector(ViewController.updateTimeLabel), userInfo: nil, repeats: true)
+		RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)
 	}
 
-	override var representedObject: AnyObject? {
+	override var representedObject: Any? {
 		didSet {
 		}
 	}
 
 	func updateTimeLabel() {
-		let now = NSDate();
-		if let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian) {
-			let units: NSCalendarUnit = [NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Nanosecond]
-			let componets = calendar.components(units, fromDate: now)
-			let millisecond = componets.nanosecond / 1000000;
-			let text = String(format: "%02d:%02d:%02d.%03d", componets.hour, componets.minute, componets.second, millisecond)
+		let now = Date();
+		let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+		let units = Set<Calendar.Component>([.hour, .minute, .second, .nanosecond])
+		let components = calendar.dateComponents(units, from: now)
+		if let hour = components.hour, let minute = components.minute, let second = components.second, let nanosecond = components.nanosecond {
+			let millisecond = nanosecond / 1000000;
+			let text = String(format: "%02d:%02d:%02d.%03d", hour, minute, second, millisecond)
 			
 			self.timeLabel.stringValue = text;
-			self.hourPie.currentValue = (Float)(componets.hour)
-			self.minutePie.currentValue = (Float)(componets.minute)
-			self.secondPie.currentValue = (Float)(componets.second)
-			self.millisecondPie.currentValue = (Float)(millisecond)
+			self.hourPie.currentValue = Float(hour)
+			self.minutePie.currentValue = Float(minute)
+			self.secondPie.currentValue = Float(second)
+			self.millisecondPie.currentValue = Float(millisecond)
 		}
 	}
 }
