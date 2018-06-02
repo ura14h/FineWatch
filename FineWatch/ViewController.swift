@@ -42,7 +42,7 @@ class ViewController: NSViewController {
 		}
 	}
 
-	func updateTimeLabel() {
+	@objc func updateTimeLabel() {
 		let now = Date();
 		let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
 		let units = Set<Calendar.Component>([.hour, .minute, .second, .nanosecond])
